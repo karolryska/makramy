@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "_variables";
+@import "_animations";
 
 *,
 *::before,
@@ -51,12 +52,29 @@ html {
     z-index: 10;
 
     @media (min-width: $tablet) {
-      font-size: 90px;
+      font-size: 140px;
     }
 
     @media (min-width: $desktop) {
-      font-size: 120px;
+      font-size: 160px;
     }
+  }
+
+  &__arrow {
+    z-index: 10;
+    animation: arrow-down 1.2s infinite;
+  }
+}
+
+.arrow-down {
+  height: 50px;
+
+  @media (min-width: $tablet) {
+    height: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 80px;
   }
 }
 
