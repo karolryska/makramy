@@ -59,13 +59,14 @@ html {
 
     @media (min-width: $desktop) {
       font-size: 160px;
+      transform: translateY(0);
     }
   }
 
   &__arrow {
     position: absolute;
     left: 50%;
-    bottom: 100px;
+    bottom: 60px;
     z-index: 10;
     animation: arrow-down 1.2s infinite;
   }
@@ -73,7 +74,7 @@ html {
 
 .arrow-down {
   height: 50px;
-  transform: translate(-50%, -40px);
+  transform: translate(-50%, -85px);
 
   @media (min-width: $tablet) {
     height: 70px;

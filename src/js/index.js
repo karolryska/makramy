@@ -17,5 +17,14 @@ AOS.init({
     easing: 'ease', // default easing for AOS animations
     once: true, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    anchorPlacement: 'bottom-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+
+const contentWrapper = document.querySelector(".wrapper")
+const contentWithAnimation = [...document.querySelectorAll(".macrame__photo, .macrame__description")];
+
+console.log(contentWrapper.offsetWidth);
+if (contentWrapper.offsetWidth < 768) contentWithAnimation.forEach(element => {
+    element.setAttribute("data-aos", "fade-up");
+    element.setAttribute("data-aos-delay", "100");
 });
