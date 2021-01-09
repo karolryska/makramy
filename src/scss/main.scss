@@ -1,6 +1,8 @@
 @import "~normalize.css";
 @import "_variables";
 @import "_animations";
+@import "modules/gallery.scss";
+
 
 *,
 *::before,
@@ -16,7 +18,7 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .hero {
