@@ -2,12 +2,6 @@
     width: 100vw;
     max-height: 1000px;
     overflow: hidden;
-
-    // @media (min-width: $desktop) {
-    //     width: 90%;
-    //     // transform-origin: top center;
-    //     // transform: scale(1.4);
-    // }
 }
 
 .swiper-container {
@@ -16,11 +10,9 @@
 
 .swiper-slide {
     opacity: 0.3 !important;
-    // transform: scale(0.9) !important;
 
     &-active {
         opacity: 1 !important;
-        // transform: scale(1) !important;
     }
 
     &-prev,
@@ -50,15 +42,11 @@
 }
 
 .swiper-button-prev {
-
     transform: translateX(100px) !important;
-
 }
 
 .swiper-button-next {
-
     transform: translateX(-100px) !important;
-
 }
 
 
