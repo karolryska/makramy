@@ -1,0 +1,62 @@
+.swiper-container {
+    width: 100vw;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    opacity: 0.3 !important;
+
+    &-active {
+        opacity: 1 !important;
+    }
+
+    &-prev,
+    &-nexy {
+        position: relative;
+
+        ::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $color04;
+        }
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        color: $color01;
+    }
+}
+
+.swiper-button-prev {
+    transform: translateX(100px) !important;
+}
+
+.swiper-button-next {
+    transform: translateX(-100px) !important;
+}
+
+
+.swiper-pagination {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+
+    &-bullet-active {
+        background-color: $color01;
+        transform: scale(1.3);
+    }
+}

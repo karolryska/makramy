@@ -10,6 +10,7 @@
   <meta property="og:description" content="" />
   <meta property="og:url" content="" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    
 <body>
   <main class="wrapper">
@@ -41,7 +42,20 @@
         </article>
       </div>
     </section>
-    <!-- <section class="section"></section> -->
+    <section class="section">
+      <h2 class="section__title">nasze zdjęcia</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" data-aos="fade-up" src="../assets/img/galeria01.jpg" alt="">
+          <img class="swiper-slide" data-aos="fade-up" src="../assets/img/galeria02.jpg" alt="">
+          <img class="swiper-slide" data-aos="fade-up" src="../assets/img/galeria03.jpg" alt="">
+          <img class="swiper-slide" data-aos="fade-up" src="../assets/img/galeria04.jpg" alt="">
+        </div>
+        <div class="swiper-pagination" data-aos="fade-up" data-aos-delay="500"></div>
+        <div class="swiper-button-prev" data-aos="fade-up" data-aos-delay="500"></div>
+        <div class="swiper-button-next" data-aos="fade-up" data-aos-delay="500"></div>
+      </div>
+    </section>
     <section class="section">
       <h2 class="section__title">kontakt</h2>
       <p class="section__description" data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -52,6 +66,7 @@
     </section>
   </main>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,17 @@
 @import "~normalize.css";
 @import "_variables";
 @import "_animations";
+@import "modules/gallery.scss";
+
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 html {

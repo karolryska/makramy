@@ -20,11 +20,29 @@ AOS.init({
     anchorPlacement: 'bottom-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-// const contentWrapper = document.querySelector(".wrapper")
-// const contentWithAnimation = [...document.querySelectorAll(".macrame__photo, .macrame__description")];
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    autoHeight: true,
+    loop: true,
+    slidesPerView: 1.4,
+    spaceBetween: 14,
+    centeredSlides: true,
+    simulateTouch: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+      },
+    breakpoints: {
+      768: {
+        slidesPerView: 3.8,
+        spaceBetween: 30,
+        simulateTouch: false,
+        shortSwipes: false,
+        longSwipes: false,
 
-// console.log(contentWrapper.offsetWidth);
-// if (contentWrapper.offsetWidth < 768) contentWithAnimation.forEach(element => {
-//     element.setAttribute("data-aos", "fade-up");
-//     element.setAttribute("data-aos-delay", "100");
-// });
+      },
+    }
+  })
