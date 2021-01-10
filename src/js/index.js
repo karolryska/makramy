@@ -24,9 +24,10 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     autoHeight: true,
     loop: true,
-    slidesPerView: 1,
-    spaceBetween: 24,
+    slidesPerView: 1.4,
+    spaceBetween: 14,
     centeredSlides: true,
+    simulateTouch: false,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -36,7 +37,12 @@ var mySwiper = new Swiper('.swiper-container', {
       },
     breakpoints: {
       768: {
-        slidesPerView: 3,
+        slidesPerView: 3.8,
+        spaceBetween: 30,
+        simulateTouch: false,
+        shortSwipes: false,
+        longSwipes: false,
+
       },
     }
   })

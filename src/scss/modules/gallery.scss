@@ -1,12 +1,17 @@
 .swiper-container {
-    width: 100%;
+    width: 100vw;
     max-height: 1000px;
+    overflow: hidden;
 
-    @media (min-width: $desktop) {
-        width: 90%;
-        // transform-origin: top center;
-        // transform: scale(1.4);
-    }
+    // @media (min-width: $desktop) {
+    //     width: 90%;
+    //     // transform-origin: top center;
+    //     // transform: scale(1.4);
+    // }
+}
+
+.swiper-container {
+    overflow: hidden;
 }
 
 .swiper-slide {
@@ -44,17 +49,17 @@
     }
 }
 
-/* .swiper-button-prev {
-    &::after {
-        transform: translateX(100px);
-    }
+.swiper-button-prev {
+
+    transform: translateX(100px) !important;
+
 }
 
 .swiper-button-next {
-    &::after {
-        transform: translateX(-100px);
-    }
-} */
+
+    transform: translateX(-100px) !important;
+
+}
 
 
 .swiper-pagination {
