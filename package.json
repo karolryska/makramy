@@ -45,6 +45,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4"
   }
 }

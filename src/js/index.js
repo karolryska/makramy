@@ -28,3 +28,17 @@ AOS.init({
 //     element.setAttribute("data-aos", "fade-up");
 //     element.setAttribute("data-aos-delay", "100");
 // });
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    center: true,
+    items:1,
+    loop:true,
+    margin:10,
+    responsive:{
+        768:{
+            items: 2.4
+        }
+    }
+  });
+});
