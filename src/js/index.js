@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -20,24 +21,18 @@ AOS.init({
     anchorPlacement: 'bottom-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-// const contentWrapper = document.querySelector(".wrapper")
-// const contentWithAnimation = [...document.querySelectorAll(".macrame__photo, .macrame__description")];
-
-// console.log(contentWrapper.offsetWidth);
-// if (contentWrapper.offsetWidth < 768) contentWithAnimation.forEach(element => {
-//     element.setAttribute("data-aos", "fade-up");
-//     element.setAttribute("data-aos-delay", "100");
-// });
-
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     center: true,
-    items:1,
+    items: 1.4,
     loop:true,
-    margin:10,
+    margin:20,
+    // nav: true,
     responsive:{
         768:{
-            items: 2.4
+            items: 3.6,
+            margin: 30,
+            // nav: true,
         }
     }
   });
