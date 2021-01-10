@@ -4,20 +4,58 @@
 
     @media (min-width: $desktop) {
         width: 90%;
+        // transform-origin: top center;
+        // transform: scale(1.4);
+    }
+}
+
+.swiper-slide {
+    opacity: 0.3 !important;
+    // transform: scale(0.9) !important;
+
+    &-active {
+        opacity: 1 !important;
+        // transform: scale(1) !important;
+    }
+
+    &-prev,
+    &-nexy {
+        position: relative;
+
+        ::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $color04;
+        }
     }
 }
 
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
-    opacity: 0.4;
-    transition: .2s;
 
     @media (min-width: $desktop) {
         display: flex;
         color: $color01;
     }
 }
+
+/* .swiper-button-prev {
+    &::after {
+        transform: translateX(100px);
+    }
+}
+
+.swiper-button-next {
+    &::after {
+        transform: translateX(-100px);
+    }
+} */
+
 
 .swiper-pagination {
     @media (min-width: $desktop) {
