@@ -24,6 +24,7 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     autoHeight: true,
     loop: true,
+    initialSlide: 5,
     slidesPerView: 1.4,
     spaceBetween: 14,
     centeredSlides: true,
