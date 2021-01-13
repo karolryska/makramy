@@ -47,6 +47,7 @@
     "aos": "^2.3.4",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^16.1.3"
   }
 }
