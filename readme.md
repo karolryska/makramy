@@ -26,4 +26,4 @@ npm run start
 ```
 
 ## Live
-[w-sznurkach](https://www.w-sznurkach.pl/)
+[w-sznurkach](https://karolryska.github.io/makramy/)
